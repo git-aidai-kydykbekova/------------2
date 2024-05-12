@@ -1,0 +1,507 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #e5e5e5;
+}
+ul {
+	padding-left: 0;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+.header__banner {
+	background: url('../image/jeti Oguz.jpeg') center / cover;
+	height: 100vh;
+	background-repeat: no-repeat;
+}
+
+.header__container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header__container__navbar {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 72px;
+	align-items: center;
+}
+
+.navbar__list {
+	display: flex;
+	
+}
+.navbar__list li {
+	position: relative;
+}
+.navbar__list li::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+	background-color: #000;
+	transition: 300ms;
+}
+.navbar__list li:hover:after {
+	width: 100%;
+}
+.navbar__list li a {
+	text-decoration: none;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000;
+}
+
+.navbar__list li + li {
+	margin-left: 50px;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.navbar__contact {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 100px 1fr 100px;
+	grid-gap: 10px;
+	height: 100vh;
+}
+
+
+
+.navbar__contact .phone-number {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.header__container__logo {
+	text-align: center;
+	margin-top: 152px;
+}
+
+.header__container__logo h1 {
+	font-size: 250px;
+	line-height: 250px;
+	font-family: 'Festive', cursive;
+	font-weight: 100;
+}
+.header__container__logo em {
+	font-size: 60px;
+	line-height: 30px;
+	display: flex;
+	justify-content: flex-end;
+	font-weight: 300;
+}
+
+.fairy-tail__content {
+	display: flex;
+	
+	justify-content: space-around;
+	background: rgb(95, 146, 95);
+	color: white;
+	padding: 10px 0;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+.fairy-tail__swiper {
+	width: 53%;
+}
+.fairy-tail {
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+.fairy-tail__title h3 {
+	font-size: 96px;
+	line-height: 100px;
+	color: green;
+	font-family: 'Festive', cursive;
+	font-weight: 100;
+}
+.fairy-tail__title em {
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 28px;
+	margin-left: 170px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.fairy-tail__about {
+	width: 545px;
+	margin: 50px auto 0 55px;
+}
+
+.fairy-tail__about__info {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 50px;
+}
+
+.fairy-tail__about__bold {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.fairy-tail__about__list {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.fairy-tail__about__list li {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.qur__trip__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.qur__trip__container__about {
+	width: 330px;
+	margin: 0 270px 0 auto;
+}
+
+.container__about__title {
+	margin-bottom: 108px;
+	position: relative;
+}
+.container__about__title::before {
+
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 100;
+	right: -5%;
+	font-style: italic;
+	bottom: 0;
+}
+.container__about__title h3 {
+	font-size: 96px;
+	line-height: 128px;
+	font-weight: 100;
+	font-family: 'Festive', cursive;
+	color: green;
+}
+
+.cards__group__card {
+	margin-bottom: 50px;
+}
+.cards__group__card h4 {
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+.cards__group__card ul li {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 100;
+}
+
+.qur__trip__button a {
+	border: 1px solid green;
+	padding: 11px 53px;
+	font-size: 24px;
+	line-height: 28px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 300;
+	transition: 500ms;
+}
+.qur__trip__button a:hover {
+	background-color: green;
+	color: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.qur__trip__container__swiper {
+	width: 53%;
+}
+
+
+.hotel__container {
+	margin-top: 200px;
+}
+
+.hotel__title {
+	margin-bottom: 130px;
+}
+.hotel__title h3 {
+	width: 210px;
+	font-size: 96px;
+	line-height: 128px;
+	color: green;
+	font-family: 'Festive', cursive;
+	font-weight: 100;
+	position: relative;
+}
+
+.hotel__title h3::before {
+
+	position: absolute;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	color: #000;
+	height: 20%;
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 28px;
+	font-style: italic;
+	bottom: 0;
+	right: -55%;
+}
+
+.hotel__about {
+	display: flex;
+}
+
+.hotel__about__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 600px;
+	margin: 0 0 0 auto;
+}
+
+.hotel__about__info__text p {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+
+.hotel__about__info__images {
+	display: flex;
+	flex-direction: column;
+}
+
+.hotel__about__info__images img {
+	margin-left: 15px;
+}
+.hotel__about__info__images__top {
+	margin-bottom: 10px;
+}
+
+
+.price {
+	position: relative;
+}
+.price__container {
+	margin-top: 200px;
+}
+
+.price__title h3 {
+	font-size: 96px;
+	line-height: 128px;
+	color: green;
+	width: 210px;
+	font-weight: 100;
+	font-family: 'Festive', cursive;
+	position: relative;
+}
+
+.price__title h3::before {
+
+	position: absolute;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	color: #000;
+	height: 20%;
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 28px;
+	font-style: italic;
+	bottom: 0;
+	right: -55%;
+}
+
+.price__info {
+	margin-top: 130px;
+	display: flex;
+}
+
+.price__info__includes {
+	max-width: 40%;
+}
+.price__info div h5 {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+
+.price__info ul li {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+
+.price__info__notincludes {
+	max-width: 30%;
+	margin-left: 70px;
+}
+
+.price .balloon1 {
+	position: absolute;
+	width: 206px;
+	height: 305px;
+	right: 150px;
+	bottom: 30%;
+}
+
+.price .small-balloon1 {
+	position: absolute;
+	width: 73px;
+	height: 108px;
+	right: 430px;
+	bottom: 35%;
+}
+.price .small-balloon2 {
+	position: absolute;
+	width: 73px;
+	height: 108px;
+	right: 350px;
+	bottom: 5%;
+}
+
+
+.blank__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 200px;
+}
+
+.blank__form {
+	max-width: 383px;
+	margin: auto auto auto 0;
+}
+
+.blank__form__date h3 {
+	font-size: 96px;
+	line-height: 69px;
+	color: green;
+	font-family: 'Festive', cursive;
+	font-weight: 100;
+	text-align: end;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.blank__form__date h3.date::before {
+
+	position: absolute;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	color: #000;
+	height: 20%;
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 28px;
+	font-style: italic;
+	bottom: -10%;
+	right: -25%;
+}
+
+.blank__form__date h3.cost::before {
+
+	position: absolute;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	color: #000;
+	height: 20%;
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 28px;
+	font-style: italic;
+	bottom: -10%;
+	right: -10%;
+}
+
+.blank__form__input {
+	margin-top: 128px;
+	display: flex;
+	flex-direction: column;
+	width: 383px;
+	text-align: center;
+}
+
+.blank__form__input h4 {
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 50px;
+	font-weight: 400;
+}
+
+.blank__form__input input {
+	outline: 0;
+	background-color: #fff;
+	width: 100%;
+	padding: 14px 0 15px 21px;
+	margin-bottom: 20px;
+	border: 1px solid green;
+	border-radius: 30px;
+}
+
+.blank__form__input a {
+	font-size: 24px;
+	line-height: 28px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 12px 0;
+	color: #000;
+	text-decoration: none;
+	border: 1px solid green;
+	transition: 400ms;
+}
+
+.blank__form__input a:hover {
+	background-color: green;
+	color: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
